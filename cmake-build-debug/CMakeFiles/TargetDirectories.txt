@@ -1,0 +1,3 @@
+/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir
+/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/edit_cache.dir
