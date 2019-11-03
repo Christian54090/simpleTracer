@@ -84,10 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Light.cpp">
+			<Option target="simpleTracer"/>
+		</Unit>
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Light.h">
+			<Option target="simpleTracer"/>
+		</Unit>
 		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Shapes.cpp">
 			<Option target="simpleTracer"/>
 		</Unit>
 		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Shapes.h">
+			<Option target="simpleTracer"/>
+		</Unit>
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Texture.cpp">
+			<Option target="simpleTracer"/>
+		</Unit>
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Texture.h">
 			<Option target="simpleTracer"/>
 		</Unit>
 		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Vec.cpp">

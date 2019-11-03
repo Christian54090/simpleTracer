@@ -2,11 +2,11 @@
 
 ## TODO
  * [X] Spheres
- * [ ] Lighting & shadow
+ * [X] Lighting & shadow
  * [ ] Simple materials
  * [ ] Planes
  * [ ] .jpg and .png support
- * [ ] Meshes
+ * [ ] Triangle meshes
  * [ ] Complex materials
  * [ ] Complex meshes
  * [ ] Live camera mode

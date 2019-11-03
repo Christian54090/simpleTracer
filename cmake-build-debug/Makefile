@@ -123,6 +123,33 @@ simpleTracer/fast:
 	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/build
 .PHONY : simpleTracer/fast
 
+Light.o: Light.cpp.o
+
+.PHONY : Light.o
+
+# target to build an object file
+Light.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Light.cpp.o
+.PHONY : Light.cpp.o
+
+Light.i: Light.cpp.i
+
+.PHONY : Light.i
+
+# target to preprocess a source file
+Light.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Light.cpp.i
+.PHONY : Light.cpp.i
+
+Light.s: Light.cpp.s
+
+.PHONY : Light.s
+
+# target to generate assembly for a file
+Light.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Light.cpp.s
+.PHONY : Light.cpp.s
+
 Shapes.o: Shapes.cpp.o
 
 .PHONY : Shapes.o
@@ -149,6 +176,33 @@ Shapes.s: Shapes.cpp.s
 Shapes.cpp.s:
 	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Shapes.cpp.s
 .PHONY : Shapes.cpp.s
+
+Texture.o: Texture.cpp.o
+
+.PHONY : Texture.o
+
+# target to build an object file
+Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Texture.cpp.o
+.PHONY : Texture.cpp.o
+
+Texture.i: Texture.cpp.i
+
+.PHONY : Texture.i
+
+# target to preprocess a source file
+Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Texture.cpp.i
+.PHONY : Texture.cpp.i
+
+Texture.s: Texture.cpp.s
+
+.PHONY : Texture.s
+
+# target to generate assembly for a file
+Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Texture.cpp.s
+.PHONY : Texture.cpp.s
 
 Vec.o: Vec.cpp.o
 
@@ -213,9 +267,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... simpleTracer"
 	@echo "... edit_cache"
+	@echo "... Light.o"
+	@echo "... Light.i"
+	@echo "... Light.s"
 	@echo "... Shapes.o"
 	@echo "... Shapes.i"
 	@echo "... Shapes.s"
+	@echo "... Texture.o"
+	@echo "... Texture.i"
+	@echo "... Texture.s"
 	@echo "... Vec.o"
 	@echo "... Vec.i"
 	@echo "... Vec.s"

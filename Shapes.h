@@ -6,14 +6,16 @@
 #define SIMPLETRACER_SHAPES_H
 
 #include "Vec.h"
+#include "Texture.h"
 
 struct Sphere {
     Vec3f center;
     float radius;
+    Texture texture;
 
-    Sphere(Vec3f c, float r) : center(c), radius(r) {}
+    Sphere(Vec3f c, float r, Texture t) : center(c), radius(r), texture(t) {}
 
-    bool intersect(const Ray &ray, float &t0) {
+    bool intersect(const Ray &ray, float &t0) const {
         Vec3f L = center - ray.origin;      // center at origin
 
         float tca = L.dot(ray.direction);
