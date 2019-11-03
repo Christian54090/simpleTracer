@@ -1,7 +1,7 @@
 # simpleTracer
 
 ## TODO
- * [ ] Spheres
+ * [X] Spheres
  * [ ] Lighting & shadow
  * [ ] Simple materials
  * [ ] Planes
