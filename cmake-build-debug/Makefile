@@ -123,6 +123,33 @@ simpleTracer/fast:
 	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/build
 .PHONY : simpleTracer/fast
 
+Shapes.o: Shapes.cpp.o
+
+.PHONY : Shapes.o
+
+# target to build an object file
+Shapes.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Shapes.cpp.o
+.PHONY : Shapes.cpp.o
+
+Shapes.i: Shapes.cpp.i
+
+.PHONY : Shapes.i
+
+# target to preprocess a source file
+Shapes.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Shapes.cpp.i
+.PHONY : Shapes.cpp.i
+
+Shapes.s: Shapes.cpp.s
+
+.PHONY : Shapes.s
+
+# target to generate assembly for a file
+Shapes.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Shapes.cpp.s
+.PHONY : Shapes.cpp.s
+
 Vec.o: Vec.cpp.o
 
 .PHONY : Vec.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... simpleTracer"
 	@echo "... edit_cache"
+	@echo "... Shapes.o"
+	@echo "... Shapes.i"
+	@echo "... Shapes.s"
 	@echo "... Vec.o"
 	@echo "... Vec.i"
 	@echo "... Vec.s"

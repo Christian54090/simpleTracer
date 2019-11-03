@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/simpleTracer.dir/main.cpp.o CMakeFiles/simpleTracer.dir/Vec.cpp.o  -o simpleTracer 
+/usr/bin/c++  -g   CMakeFiles/simpleTracer.dir/main.cpp.o CMakeFiles/simpleTracer.dir/Vec.cpp.o CMakeFiles/simpleTracer.dir/Shapes.cpp.o  -o simpleTracer 

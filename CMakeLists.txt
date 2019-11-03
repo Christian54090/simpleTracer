@@ -3,4 +3,4 @@ project(simpleTracer)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(simpleTracer main.cpp Vec.cpp Vec.h)
+add_executable(simpleTracer main.cpp Vec.cpp Vec.h Shapes.cpp Shapes.h)
