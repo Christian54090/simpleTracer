@@ -21,6 +21,7 @@ struct Vec3 {
     Vec3<T> operator - (Vec3<T> v) const { return Vec3<T>(x-v.x,y-v.y,z-v.z); }
     Vec3<T> operator + (Vec3<T> v) const { return Vec3<T>(x+v.x,y+v.y,z+v.z); }
     Vec3<T> operator + (float v) const { return Vec3<T>(x+v,y+v,z+v); }
+    void operator += (Vec3<T> v) { *this = *this + v; }
 
     T dot(Vec3<T> a) const { return x*a.x+y*a.y+z*a.z; }
     Vec3<T> cross(Vec3<T> a) { return Vec3<T>(y*a.z-z*a.y, z*a.x-x*a.z, x*a.y-y*a.x); }

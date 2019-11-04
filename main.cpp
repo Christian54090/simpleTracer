@@ -17,7 +17,13 @@ void clamp(Color &color) {
     color.z = color.z < 0 ? 0 : color.z > 255 ? 255 : color.z;
 }
 
-bool intersect(const Ray ray, const std::vector<Sphere> &spheres, Texture &texture, Vec3f &point, Vec3f &N) {
+bool intersect(
+        const Ray &ray,
+        const std::vector<Sphere> &spheres,
+        Texture &texture,
+        Vec3f &point,
+        Vec3f &N
+) {
     float spheres_distance = 1000;
     for (auto & sphere : spheres) {
         float t0;
@@ -40,6 +46,7 @@ Vec3f light_multiplier(
         const std::vector<Sphere> &spheres,
         const Ray &ray,
         const Texture &texture,
+        Texture &reflect_texture,
         Vec3f &point,
         Vec3f &N
 ) {
@@ -62,7 +69,33 @@ Vec3f light_multiplier(
                 texture.specular*light.intensity
         );
     }
-    return Vec3f(4.,4.,4.)*specular_multiplier*texture.albedo.y + diffuse_multiplier*texture.albedo.x;
+    return texture.color * diffuse_multiplier * texture.albedo.x +
+        Vec3f(255.,255.,255.) * specular_multiplier * texture.albedo.y +
+        reflect_texture.color * texture.albedo.z;
+}
+
+Color send_ray(
+        const Ray &ray,
+        const std::vector<Sphere> &spheres,
+        const std::vector<Light> &lights,
+        size_t reflection_depth=0
+) {
+    Vec3f point, N;
+    Texture texture;
+
+    Color background(128,128,128);  // gray
+
+    if (reflection_depth > 4 || !intersect(ray, spheres, texture, point, N))
+        return background;
+
+    Vec3f reflect_direction = reflect(ray.direction, N).normalize();
+    Vec3f reflect_origin = reflect_direction.dot(N) < 0 ? point-N*1e-3 : point+N*1e-3;
+    Ray reflect_ray(reflect_origin, reflect_direction);
+
+    Texture reflect_texture;
+    reflect_texture.color = send_ray(reflect_ray, spheres, lights, reflection_depth+1);
+
+    return light_multiplier(lights, spheres, ray, texture, reflect_texture, point, N);
 }
 
 void render(const std::vector<Sphere> &spheres, const std::vector<Light> &lights) {
@@ -70,7 +103,7 @@ void render(const std::vector<Sphere> &spheres, const std::vector<Light> &lights
     const int H = 768;
     const int fov = M_PI/2.;
 
-    Color background(128,128,128);  // gray
+//    Color background(128,128,128);  // gray
 
     Texture texture;
 
@@ -81,14 +114,9 @@ void render(const std::vector<Sphere> &spheres, const std::vector<Light> &lights
             // Send a ray through the pixel
             double vx = (2*( (float)x + 0.5f) / (float)W - 1)*tan(fov/2.)*W / float(H);
             double vy = -(2*( (float)y + 0.5f) / (float)H - 1)*tan(fov/2.);
-            const Ray ray(Vec3f(0,0,0), Vec3f(vx,vy,-1).normalize());
-            Vec3f point, N;
+            Ray ray(Vec3f(0,0,0), Vec3f(vx,vy,-1).normalize());
 
-            // Check for intersections
-            if (!intersect(ray, spheres, texture, point, N))
-                texture.color = background;
-            else
-                texture.color *= light_multiplier(lights, spheres, ray, texture, point, N);
+            texture.color = send_ray(ray, spheres, lights);
 
             clamp(texture.color);
 
@@ -102,17 +130,19 @@ void render(const std::vector<Sphere> &spheres, const std::vector<Light> &lights
 int main() {
     Texture ivory(Color(102,102,76.5), Vec3f(0.6,0.3,0), 50.);
     Texture red_rubber(Color(76.5,25.5,25.5), Vec3f(0.9,0.1,0), 10.);
+    Texture mirror(Color(255,255,255), Vec3f(0.0,10.0,0.8), 1425.);
+    Texture gold(Color(255,215,0), Vec3f(0.2,10.0,0.45), 300.);
 
     std::vector<Sphere> spheres;
     spheres.emplace_back(Vec3f(-3,0,-16), 2, ivory);
-    spheres.emplace_back(Vec3f(-1,-1.5,-12), 2, red_rubber);
+    spheres.emplace_back(Vec3f(-1,-1.5,-12), 2, gold);
     spheres.emplace_back(Vec3f(1.5,-0.5,-18), 3, red_rubber);
-    spheres.emplace_back(Vec3f(7,5,-18), 4, ivory);
+    spheres.emplace_back(Vec3f(7,5,-18), 4, mirror);
 
     std::vector<Light> lights;
     lights.emplace_back(Vec3f(-20,20,20), 1.5);
     lights.emplace_back(Vec3f(30,50,-25), 1.8);
-    lights.emplace_back(Vec3f(30,20,35), 1.7);
+    lights.emplace_back(Vec3f(30,20,30), 1.7);
 
     render(spheres, lights);
     return 0;
