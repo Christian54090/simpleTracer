@@ -204,33 +204,6 @@ src/Texture.cpp.s:
 	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Texture.cpp.s
 .PHONY : src/Texture.cpp.s
 
-src/Vec.o: src/Vec.cpp.o
-
-.PHONY : src/Vec.o
-
-# target to build an object file
-src/Vec.cpp.o:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Vec.cpp.o
-.PHONY : src/Vec.cpp.o
-
-src/Vec.i: src/Vec.cpp.i
-
-.PHONY : src/Vec.i
-
-# target to preprocess a source file
-src/Vec.cpp.i:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Vec.cpp.i
-.PHONY : src/Vec.cpp.i
-
-src/Vec.s: src/Vec.cpp.s
-
-.PHONY : src/Vec.s
-
-# target to generate assembly for a file
-src/Vec.cpp.s:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Vec.cpp.s
-.PHONY : src/Vec.cpp.s
-
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -276,9 +249,6 @@ help:
 	@echo "... src/Texture.o"
 	@echo "... src/Texture.i"
 	@echo "... src/Texture.s"
-	@echo "... src/Vec.o"
-	@echo "... src/Vec.i"
-	@echo "... src/Vec.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

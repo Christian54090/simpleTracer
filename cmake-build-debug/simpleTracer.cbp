@@ -102,9 +102,6 @@
 		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Texture.h">
 			<Option target="simpleTracer"/>
 		</Unit>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Vec.cpp">
-			<Option target="simpleTracer"/>
-		</Unit>
 		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Vec.h">
 			<Option target="simpleTracer"/>
 		</Unit>
