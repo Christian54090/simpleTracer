@@ -57,87 +57,87 @@ include CMakeFiles/simpleTracer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/simpleTracer.dir/flags.make
 
-CMakeFiles/simpleTracer.dir/main.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
-CMakeFiles/simpleTracer.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simpleTracer.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/main.cpp.o -c /home/csanders/CLionProjects/simpleTracer/main.cpp
+CMakeFiles/simpleTracer.dir/src/main.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
+CMakeFiles/simpleTracer.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simpleTracer.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/src/main.cpp.o -c /home/csanders/CLionProjects/simpleTracer/src/main.cpp
 
-CMakeFiles/simpleTracer.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/main.cpp > CMakeFiles/simpleTracer.dir/main.cpp.i
+CMakeFiles/simpleTracer.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/src/main.cpp > CMakeFiles/simpleTracer.dir/src/main.cpp.i
 
-CMakeFiles/simpleTracer.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/main.cpp -o CMakeFiles/simpleTracer.dir/main.cpp.s
+CMakeFiles/simpleTracer.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/src/main.cpp -o CMakeFiles/simpleTracer.dir/src/main.cpp.s
 
-CMakeFiles/simpleTracer.dir/Vec.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
-CMakeFiles/simpleTracer.dir/Vec.cpp.o: ../Vec.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simpleTracer.dir/Vec.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/Vec.cpp.o -c /home/csanders/CLionProjects/simpleTracer/Vec.cpp
+CMakeFiles/simpleTracer.dir/src/Vec.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
+CMakeFiles/simpleTracer.dir/src/Vec.cpp.o: ../src/Vec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simpleTracer.dir/src/Vec.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/src/Vec.cpp.o -c /home/csanders/CLionProjects/simpleTracer/src/Vec.cpp
 
-CMakeFiles/simpleTracer.dir/Vec.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/Vec.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/Vec.cpp > CMakeFiles/simpleTracer.dir/Vec.cpp.i
+CMakeFiles/simpleTracer.dir/src/Vec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/src/Vec.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/src/Vec.cpp > CMakeFiles/simpleTracer.dir/src/Vec.cpp.i
 
-CMakeFiles/simpleTracer.dir/Vec.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/Vec.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/Vec.cpp -o CMakeFiles/simpleTracer.dir/Vec.cpp.s
+CMakeFiles/simpleTracer.dir/src/Vec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/src/Vec.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/src/Vec.cpp -o CMakeFiles/simpleTracer.dir/src/Vec.cpp.s
 
-CMakeFiles/simpleTracer.dir/Shapes.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
-CMakeFiles/simpleTracer.dir/Shapes.cpp.o: ../Shapes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simpleTracer.dir/Shapes.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/Shapes.cpp.o -c /home/csanders/CLionProjects/simpleTracer/Shapes.cpp
+CMakeFiles/simpleTracer.dir/src/Shapes.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
+CMakeFiles/simpleTracer.dir/src/Shapes.cpp.o: ../src/Shapes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simpleTracer.dir/src/Shapes.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/src/Shapes.cpp.o -c /home/csanders/CLionProjects/simpleTracer/src/Shapes.cpp
 
-CMakeFiles/simpleTracer.dir/Shapes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/Shapes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/Shapes.cpp > CMakeFiles/simpleTracer.dir/Shapes.cpp.i
+CMakeFiles/simpleTracer.dir/src/Shapes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/src/Shapes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/src/Shapes.cpp > CMakeFiles/simpleTracer.dir/src/Shapes.cpp.i
 
-CMakeFiles/simpleTracer.dir/Shapes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/Shapes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/Shapes.cpp -o CMakeFiles/simpleTracer.dir/Shapes.cpp.s
+CMakeFiles/simpleTracer.dir/src/Shapes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/src/Shapes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/src/Shapes.cpp -o CMakeFiles/simpleTracer.dir/src/Shapes.cpp.s
 
-CMakeFiles/simpleTracer.dir/Texture.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
-CMakeFiles/simpleTracer.dir/Texture.cpp.o: ../Texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/simpleTracer.dir/Texture.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/Texture.cpp.o -c /home/csanders/CLionProjects/simpleTracer/Texture.cpp
+CMakeFiles/simpleTracer.dir/src/Texture.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
+CMakeFiles/simpleTracer.dir/src/Texture.cpp.o: ../src/Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/simpleTracer.dir/src/Texture.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/src/Texture.cpp.o -c /home/csanders/CLionProjects/simpleTracer/src/Texture.cpp
 
-CMakeFiles/simpleTracer.dir/Texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/Texture.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/Texture.cpp > CMakeFiles/simpleTracer.dir/Texture.cpp.i
+CMakeFiles/simpleTracer.dir/src/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/src/Texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/src/Texture.cpp > CMakeFiles/simpleTracer.dir/src/Texture.cpp.i
 
-CMakeFiles/simpleTracer.dir/Texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/Texture.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/Texture.cpp -o CMakeFiles/simpleTracer.dir/Texture.cpp.s
+CMakeFiles/simpleTracer.dir/src/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/src/Texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/src/Texture.cpp -o CMakeFiles/simpleTracer.dir/src/Texture.cpp.s
 
-CMakeFiles/simpleTracer.dir/Light.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
-CMakeFiles/simpleTracer.dir/Light.cpp.o: ../Light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simpleTracer.dir/Light.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/Light.cpp.o -c /home/csanders/CLionProjects/simpleTracer/Light.cpp
+CMakeFiles/simpleTracer.dir/src/Light.cpp.o: CMakeFiles/simpleTracer.dir/flags.make
+CMakeFiles/simpleTracer.dir/src/Light.cpp.o: ../src/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simpleTracer.dir/src/Light.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleTracer.dir/src/Light.cpp.o -c /home/csanders/CLionProjects/simpleTracer/src/Light.cpp
 
-CMakeFiles/simpleTracer.dir/Light.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/Light.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/Light.cpp > CMakeFiles/simpleTracer.dir/Light.cpp.i
+CMakeFiles/simpleTracer.dir/src/Light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleTracer.dir/src/Light.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csanders/CLionProjects/simpleTracer/src/Light.cpp > CMakeFiles/simpleTracer.dir/src/Light.cpp.i
 
-CMakeFiles/simpleTracer.dir/Light.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/Light.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/Light.cpp -o CMakeFiles/simpleTracer.dir/Light.cpp.s
+CMakeFiles/simpleTracer.dir/src/Light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleTracer.dir/src/Light.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csanders/CLionProjects/simpleTracer/src/Light.cpp -o CMakeFiles/simpleTracer.dir/src/Light.cpp.s
 
 # Object files for target simpleTracer
 simpleTracer_OBJECTS = \
-"CMakeFiles/simpleTracer.dir/main.cpp.o" \
-"CMakeFiles/simpleTracer.dir/Vec.cpp.o" \
-"CMakeFiles/simpleTracer.dir/Shapes.cpp.o" \
-"CMakeFiles/simpleTracer.dir/Texture.cpp.o" \
-"CMakeFiles/simpleTracer.dir/Light.cpp.o"
+"CMakeFiles/simpleTracer.dir/src/main.cpp.o" \
+"CMakeFiles/simpleTracer.dir/src/Vec.cpp.o" \
+"CMakeFiles/simpleTracer.dir/src/Shapes.cpp.o" \
+"CMakeFiles/simpleTracer.dir/src/Texture.cpp.o" \
+"CMakeFiles/simpleTracer.dir/src/Light.cpp.o"
 
 # External object files for target simpleTracer
 simpleTracer_EXTERNAL_OBJECTS =
 
-simpleTracer: CMakeFiles/simpleTracer.dir/main.cpp.o
-simpleTracer: CMakeFiles/simpleTracer.dir/Vec.cpp.o
-simpleTracer: CMakeFiles/simpleTracer.dir/Shapes.cpp.o
-simpleTracer: CMakeFiles/simpleTracer.dir/Texture.cpp.o
-simpleTracer: CMakeFiles/simpleTracer.dir/Light.cpp.o
+simpleTracer: CMakeFiles/simpleTracer.dir/src/main.cpp.o
+simpleTracer: CMakeFiles/simpleTracer.dir/src/Vec.cpp.o
+simpleTracer: CMakeFiles/simpleTracer.dir/src/Shapes.cpp.o
+simpleTracer: CMakeFiles/simpleTracer.dir/src/Texture.cpp.o
+simpleTracer: CMakeFiles/simpleTracer.dir/src/Light.cpp.o
 simpleTracer: CMakeFiles/simpleTracer.dir/build.make
 simpleTracer: CMakeFiles/simpleTracer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable simpleTracer"

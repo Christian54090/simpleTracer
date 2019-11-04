@@ -84,31 +84,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Light.cpp">
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Light.cpp">
 			<Option target="simpleTracer"/>
 		</Unit>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Light.h">
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Light.h">
 			<Option target="simpleTracer"/>
 		</Unit>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Shapes.cpp">
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Shapes.cpp">
 			<Option target="simpleTracer"/>
 		</Unit>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Shapes.h">
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Shapes.h">
 			<Option target="simpleTracer"/>
 		</Unit>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Texture.cpp">
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Texture.cpp">
 			<Option target="simpleTracer"/>
 		</Unit>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Texture.h">
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Texture.h">
 			<Option target="simpleTracer"/>
 		</Unit>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Vec.cpp">
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Vec.cpp">
 			<Option target="simpleTracer"/>
 		</Unit>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/Vec.h">
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/Vec.h">
 			<Option target="simpleTracer"/>
 		</Unit>
-		<Unit filename="/home/csanders/CLionProjects/simpleTracer/main.cpp">
+		<Unit filename="/home/csanders/CLionProjects/simpleTracer/src/main.cpp">
 			<Option target="simpleTracer"/>
 		</Unit>
 		<Unit filename="/home/csanders/CLionProjects/simpleTracer/CMakeLists.txt">

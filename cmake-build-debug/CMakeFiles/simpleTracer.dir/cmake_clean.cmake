@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/simpleTracer.dir/Light.cpp.o"
-  "CMakeFiles/simpleTracer.dir/Shapes.cpp.o"
-  "CMakeFiles/simpleTracer.dir/Texture.cpp.o"
-  "CMakeFiles/simpleTracer.dir/Vec.cpp.o"
-  "CMakeFiles/simpleTracer.dir/main.cpp.o"
+  "CMakeFiles/simpleTracer.dir/src/Light.cpp.o"
+  "CMakeFiles/simpleTracer.dir/src/Shapes.cpp.o"
+  "CMakeFiles/simpleTracer.dir/src/Texture.cpp.o"
+  "CMakeFiles/simpleTracer.dir/src/Vec.cpp.o"
+  "CMakeFiles/simpleTracer.dir/src/main.cpp.o"
   "simpleTracer"
   "simpleTracer.pdb"
 )

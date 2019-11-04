@@ -123,140 +123,140 @@ simpleTracer/fast:
 	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/build
 .PHONY : simpleTracer/fast
 
-Light.o: Light.cpp.o
+src/Light.o: src/Light.cpp.o
 
-.PHONY : Light.o
-
-# target to build an object file
-Light.cpp.o:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Light.cpp.o
-.PHONY : Light.cpp.o
-
-Light.i: Light.cpp.i
-
-.PHONY : Light.i
-
-# target to preprocess a source file
-Light.cpp.i:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Light.cpp.i
-.PHONY : Light.cpp.i
-
-Light.s: Light.cpp.s
-
-.PHONY : Light.s
-
-# target to generate assembly for a file
-Light.cpp.s:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Light.cpp.s
-.PHONY : Light.cpp.s
-
-Shapes.o: Shapes.cpp.o
-
-.PHONY : Shapes.o
+.PHONY : src/Light.o
 
 # target to build an object file
-Shapes.cpp.o:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Shapes.cpp.o
-.PHONY : Shapes.cpp.o
+src/Light.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Light.cpp.o
+.PHONY : src/Light.cpp.o
 
-Shapes.i: Shapes.cpp.i
+src/Light.i: src/Light.cpp.i
 
-.PHONY : Shapes.i
+.PHONY : src/Light.i
 
 # target to preprocess a source file
-Shapes.cpp.i:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Shapes.cpp.i
-.PHONY : Shapes.cpp.i
+src/Light.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Light.cpp.i
+.PHONY : src/Light.cpp.i
 
-Shapes.s: Shapes.cpp.s
+src/Light.s: src/Light.cpp.s
 
-.PHONY : Shapes.s
+.PHONY : src/Light.s
 
 # target to generate assembly for a file
-Shapes.cpp.s:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Shapes.cpp.s
-.PHONY : Shapes.cpp.s
+src/Light.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Light.cpp.s
+.PHONY : src/Light.cpp.s
 
-Texture.o: Texture.cpp.o
+src/Shapes.o: src/Shapes.cpp.o
 
-.PHONY : Texture.o
+.PHONY : src/Shapes.o
 
 # target to build an object file
-Texture.cpp.o:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Texture.cpp.o
-.PHONY : Texture.cpp.o
+src/Shapes.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Shapes.cpp.o
+.PHONY : src/Shapes.cpp.o
 
-Texture.i: Texture.cpp.i
+src/Shapes.i: src/Shapes.cpp.i
 
-.PHONY : Texture.i
+.PHONY : src/Shapes.i
 
 # target to preprocess a source file
-Texture.cpp.i:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Texture.cpp.i
-.PHONY : Texture.cpp.i
+src/Shapes.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Shapes.cpp.i
+.PHONY : src/Shapes.cpp.i
 
-Texture.s: Texture.cpp.s
+src/Shapes.s: src/Shapes.cpp.s
 
-.PHONY : Texture.s
+.PHONY : src/Shapes.s
 
 # target to generate assembly for a file
-Texture.cpp.s:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Texture.cpp.s
-.PHONY : Texture.cpp.s
+src/Shapes.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Shapes.cpp.s
+.PHONY : src/Shapes.cpp.s
 
-Vec.o: Vec.cpp.o
+src/Texture.o: src/Texture.cpp.o
 
-.PHONY : Vec.o
+.PHONY : src/Texture.o
 
 # target to build an object file
-Vec.cpp.o:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Vec.cpp.o
-.PHONY : Vec.cpp.o
+src/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Texture.cpp.o
+.PHONY : src/Texture.cpp.o
 
-Vec.i: Vec.cpp.i
+src/Texture.i: src/Texture.cpp.i
 
-.PHONY : Vec.i
+.PHONY : src/Texture.i
 
 # target to preprocess a source file
-Vec.cpp.i:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Vec.cpp.i
-.PHONY : Vec.cpp.i
+src/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Texture.cpp.i
+.PHONY : src/Texture.cpp.i
 
-Vec.s: Vec.cpp.s
+src/Texture.s: src/Texture.cpp.s
 
-.PHONY : Vec.s
+.PHONY : src/Texture.s
 
 # target to generate assembly for a file
-Vec.cpp.s:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/Vec.cpp.s
-.PHONY : Vec.cpp.s
+src/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Texture.cpp.s
+.PHONY : src/Texture.cpp.s
 
-main.o: main.cpp.o
+src/Vec.o: src/Vec.cpp.o
 
-.PHONY : main.o
+.PHONY : src/Vec.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/Vec.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Vec.cpp.o
+.PHONY : src/Vec.cpp.o
 
-main.i: main.cpp.i
+src/Vec.i: src/Vec.cpp.i
 
-.PHONY : main.i
+.PHONY : src/Vec.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Vec.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Vec.cpp.i
+.PHONY : src/Vec.cpp.i
 
-main.s: main.cpp.s
+src/Vec.s: src/Vec.cpp.s
 
-.PHONY : main.s
+.PHONY : src/Vec.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Vec.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/Vec.cpp.s
+.PHONY : src/Vec.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleTracer.dir/build.make CMakeFiles/simpleTracer.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -267,21 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... simpleTracer"
 	@echo "... edit_cache"
-	@echo "... Light.o"
-	@echo "... Light.i"
-	@echo "... Light.s"
-	@echo "... Shapes.o"
-	@echo "... Shapes.i"
-	@echo "... Shapes.s"
-	@echo "... Texture.o"
-	@echo "... Texture.i"
-	@echo "... Texture.s"
-	@echo "... Vec.o"
-	@echo "... Vec.i"
-	@echo "... Vec.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Light.o"
+	@echo "... src/Light.i"
+	@echo "... src/Light.s"
+	@echo "... src/Shapes.o"
+	@echo "... src/Shapes.i"
+	@echo "... src/Shapes.s"
+	@echo "... src/Texture.o"
+	@echo "... src/Texture.i"
+	@echo "... src/Texture.s"
+	@echo "... src/Vec.o"
+	@echo "... src/Vec.i"
+	@echo "... src/Vec.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

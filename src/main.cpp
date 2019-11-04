@@ -8,6 +8,7 @@
 #include "Light.h"
 
 struct Sphere;
+struct Plane;
 struct Texture;
 struct Light;
 
@@ -20,6 +21,7 @@ void clamp(Color &color) {
 bool intersect(
         const Ray &ray,
         const std::vector<Sphere> &spheres,
+        const std::vector<Plane> &planes,
         Texture &texture,
         Vec3f &point,
         Vec3f &N
@@ -34,7 +36,18 @@ bool intersect(
             texture = sphere.texture;
         }
     }
-    return spheres_distance < 1000;
+
+    float plane_distance = 1000;
+    for (auto & plane : planes) {
+        float d;
+        if (plane.intersect(ray, d) && d < spheres_distance) {
+            plane_distance = d;
+            point = ray.origin + ray.direction*d;
+            N = Vec3f(0,1,0);
+            texture = plane.texture;
+        }
+    }
+    return spheres_distance < 1000 || plane_distance < 1000;
 }
 
 Vec3f reflect(const Vec3f &I, const Vec3f &N) {
@@ -44,6 +57,7 @@ Vec3f reflect(const Vec3f &I, const Vec3f &N) {
 Vec3f light_multiplier(
         const std::vector<Light> &lights,
         const std::vector<Sphere> &spheres,
+        const std::vector<Plane> &planes,
         const Ray &ray,
         const Texture &texture,
         Texture &reflect_texture,
@@ -59,7 +73,7 @@ Vec3f light_multiplier(
         Ray shadow_ray(shadow_origin, light_direction);
         Vec3f shadow_pt, shadow_N;
         Texture tmp;
-        if (intersect(shadow_ray, spheres, tmp, shadow_pt, shadow_N) &&
+        if (intersect(shadow_ray, spheres, planes, tmp, shadow_pt, shadow_N) &&
             (shadow_pt-shadow_origin).length() < light_distance)
             continue;
 
@@ -77,15 +91,16 @@ Vec3f light_multiplier(
 Color send_ray(
         const Ray &ray,
         const std::vector<Sphere> &spheres,
+        const std::vector<Plane> &planes,
         const std::vector<Light> &lights,
-        size_t reflection_depth=0
+        int reflection_depth=0
 ) {
     Vec3f point, N;
     Texture texture;
 
     Color background(128,128,128);  // gray
 
-    if (reflection_depth > 4 || !intersect(ray, spheres, texture, point, N))
+    if (reflection_depth > 4 || !intersect(ray, spheres, planes, texture, point, N))
         return background;
 
     Vec3f reflect_direction = reflect(ray.direction, N).normalize();
@@ -93,17 +108,19 @@ Color send_ray(
     Ray reflect_ray(reflect_origin, reflect_direction);
 
     Texture reflect_texture;
-    reflect_texture.color = send_ray(reflect_ray, spheres, lights, reflection_depth+1);
+    reflect_texture.color = send_ray(reflect_ray, spheres, planes, lights, reflection_depth+1);
 
-    return light_multiplier(lights, spheres, ray, texture, reflect_texture, point, N);
+    return light_multiplier(lights, spheres, planes, ray, texture, reflect_texture, point, N);
 }
 
-void render(const std::vector<Sphere> &spheres, const std::vector<Light> &lights) {
+void render(
+        const std::vector<Sphere> &spheres,
+        const std::vector<Plane> &planes,
+        const std::vector<Light> &lights
+) {
     const int W = 1024;
     const int H = 768;
     const int fov = M_PI/2.;
-
-//    Color background(128,128,128);  // gray
 
     Texture texture;
 
@@ -116,7 +133,7 @@ void render(const std::vector<Sphere> &spheres, const std::vector<Light> &lights
             double vy = -(2*( (float)y + 0.5f) / (float)H - 1)*tan(fov/2.);
             Ray ray(Vec3f(0,0,0), Vec3f(vx,vy,-1).normalize());
 
-            texture.color = send_ray(ray, spheres, lights);
+            texture.color = send_ray(ray, spheres, planes, lights);
 
             clamp(texture.color);
 
@@ -132,6 +149,7 @@ int main() {
     Texture red_rubber(Color(76.5,25.5,25.5), Vec3f(0.9,0.1,0), 10.);
     Texture mirror(Color(255,255,255), Vec3f(0.0,10.0,0.8), 1425.);
     Texture gold(Color(255,215,0), Vec3f(0.2,10.0,0.45), 300.);
+    Texture silver(Color(180,180,180), Vec3f(0.3,10.0,0.8), 500.);
 
     std::vector<Sphere> spheres;
     spheres.emplace_back(Vec3f(-3,0,-16), 2, ivory);
@@ -139,11 +157,15 @@ int main() {
     spheres.emplace_back(Vec3f(1.5,-0.5,-18), 3, red_rubber);
     spheres.emplace_back(Vec3f(7,5,-18), 4, mirror);
 
+    std::vector<Plane> planes;
+    planes.emplace_back(Vec3f(-10, -4, -30), 20, 20, silver);
+    planes.emplace_back(Vec3f(-10, 9.5, -30), 20, 20, silver);
+
     std::vector<Light> lights;
     lights.emplace_back(Vec3f(-20,20,20), 1.5);
     lights.emplace_back(Vec3f(30,50,-25), 1.8);
     lights.emplace_back(Vec3f(30,20,30), 1.7);
 
-    render(spheres, lights);
+    render(spheres, planes, lights);
     return 0;
 }

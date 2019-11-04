@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/csanders/CLionProjects/simpleTracer/Light.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/Light.cpp.o"
-  "/home/csanders/CLionProjects/simpleTracer/Shapes.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/Shapes.cpp.o"
-  "/home/csanders/CLionProjects/simpleTracer/Texture.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/Texture.cpp.o"
-  "/home/csanders/CLionProjects/simpleTracer/Vec.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/Vec.cpp.o"
-  "/home/csanders/CLionProjects/simpleTracer/main.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/main.cpp.o"
+  "/home/csanders/CLionProjects/simpleTracer/src/Light.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/src/Light.cpp.o"
+  "/home/csanders/CLionProjects/simpleTracer/src/Shapes.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/src/Shapes.cpp.o"
+  "/home/csanders/CLionProjects/simpleTracer/src/Texture.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/src/Texture.cpp.o"
+  "/home/csanders/CLionProjects/simpleTracer/src/Vec.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/src/Vec.cpp.o"
+  "/home/csanders/CLionProjects/simpleTracer/src/main.cpp" "/home/csanders/CLionProjects/simpleTracer/cmake-build-debug/CMakeFiles/simpleTracer.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
