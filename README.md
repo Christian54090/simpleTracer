@@ -2,6 +2,8 @@
 
 simpleTracer is a Ray Tracer written in C++.
 
+![example.png](example.png)
+
 **How to run:**
 ~~~
 ~[..]/simpleTracer$ g++ src/main.cpp
