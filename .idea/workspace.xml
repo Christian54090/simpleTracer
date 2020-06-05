@@ -11,7 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a80e2549-2044-4000-b970-1c4cc0feb7cb" name="Default Changelist" comment="" />
+    <list default="true" id="a80e2549-2044-4000-b970-1c4cc0feb7cb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/projects/knr" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -66,6 +75,9 @@
       <workItem from="1572801765363" duration="488000" />
       <workItem from="1572803758119" duration="5402000" />
       <workItem from="1572810649900" duration="2133000" />
+      <workItem from="1572855103227" duration="2012000" />
+      <workItem from="1588716215977" duration="546000" />
+      <workItem from="1591384896408" duration="2926000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,12 @@
 # simpleTracer
 
-simpleTracer is a Ray Tracer writtin in C++.
+simpleTracer is a Ray Tracer written in C++.
 
-![image](./out.ppm)
+**How to run:**
+~~~
+~[..]/simpleTracer$ g++ src/main.cpp
+~[..]/simpleTracer$ ./a.out
+~~~
 
 ## TODO
  * [X] Spheres

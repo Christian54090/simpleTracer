@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <cmath>
+#include <cstring>
 #include "Vec.h"
 #include "Shapes.h"
 #include "Texture.h"
@@ -144,22 +145,40 @@ void render(
     }
 }
 
-int main() {
+int main(int argc, char *argv[]) {
     Texture ivory(Color(102,102,76.5), Vec3f(0.6,0.3,0), 50.);
     Texture red_rubber(Color(76.5,25.5,25.5), Vec3f(0.9,0.1,0), 10.);
+    Texture blue_rubber(Color(25.5,25.5,76.5), Vec3f(0.9,0.1,0), 10.);
+    Texture purple_rubber(Color(76.5,25.5,76.5), Vec3f(0.9,0.1,0), 10.);
+    Texture orange_rubber(Color(153,76,0), Vec3f(0.9,0.1,0), 10.);
+    Texture grey_rubber(Color(30,30,30), Vec3f(0.9,0.1,0), 10.);
     Texture mirror(Color(255,255,255), Vec3f(0.0,10.0,0.8), 1425.);
     Texture gold(Color(255,215,0), Vec3f(0.2,10.0,0.45), 300.);
     Texture silver(Color(180,180,180), Vec3f(0.3,10.0,0.8), 500.);
 
     std::vector<Sphere> spheres;
-    spheres.emplace_back(Vec3f(-3,0,-16), 2, ivory);
-    spheres.emplace_back(Vec3f(-1,-1.5,-12), 2, gold);
-    spheres.emplace_back(Vec3f(1.5,-0.5,-18), 3, red_rubber);
+    spheres.emplace_back(Vec3f(-4,-2,-16), 2, ivory);
+    spheres.emplace_back(Vec3f(-1,-2,-12), 2, gold);
+    spheres.emplace_back(Vec3f(1.5,-1,-18), 3, red_rubber);
+    spheres.emplace_back(Vec3f(-4.5, -3.5, -14), 0.5, purple_rubber);
+    spheres.emplace_back(Vec3f(1.5, -3.5, -13.5), 0.5, orange_rubber);
+    spheres.emplace_back(Vec3f(4, -3.5, -11), 0.5, orange_rubber);
+    spheres.emplace_back(Vec3f(2.25, -3.5, -8.5), 0.5, grey_rubber);
+    spheres.emplace_back(Vec3f(10, -3, -25), 1, ivory);
+    spheres.emplace_back(Vec3f(-8, -2.5, -25), 1.5, silver);
+    spheres.emplace_back(Vec3f(-7, -3.5, -12), 0.5, silver);
+    spheres.emplace_back(Vec3f(-3, -3.65, -10), 0.35, red_rubber);
+    spheres.emplace_back(Vec3f(-0.25, -3.6, -9), 0.4, mirror);
     spheres.emplace_back(Vec3f(7,5,-18), 4, mirror);
+    spheres.emplace_back(Vec3f(-10,4,-30), 3, mirror);
 
     std::vector<Plane> planes;
-    planes.emplace_back(Vec3f(-10, -4, -30), 20, 20, silver);
-    planes.emplace_back(Vec3f(-10, 9.5, -30), 20, 20, silver);
+    planes.emplace_back(Vec3f(-15, -4, -35), 15, 30, grey_rubber);
+    planes.emplace_back(Vec3f(0, -4, -35), 15, 30, blue_rubber);
+    planes.emplace_back(Vec3f(-10, 9.5, -30), 10, 10, ivory);
+    planes.emplace_back(Vec3f(-10, 9.5, -20), 10, 10, grey_rubber);
+    planes.emplace_back(Vec3f(0, 9.5, -30), 10, 10, grey_rubber);
+    planes.emplace_back(Vec3f(0, 9.5, -20), 10, 10, ivory);
 
     std::vector<Light> lights;
     lights.emplace_back(Vec3f(-20,20,20), 1.5);
@@ -167,5 +186,6 @@ int main() {
     lights.emplace_back(Vec3f(30,20,30), 1.7);
 
     render(spheres, planes, lights);
+
     return 0;
 }
