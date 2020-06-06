@@ -15,11 +15,11 @@ simpleTracer is a Ray Tracer written in C++.
  * [X] Lighting & shadow
  * [X] Simple materials
  * [X] Planes
+ * [ ] Antialiasing
+ * [ ] Depth of field
  * [ ] .jpg and .png support
  * [ ] Triangle meshes
- * [ ] Complex materials
- * [ ] Complex meshes
- * [ ] Live camera mode
+ * [ ] Surface materials
  
 ## Resources
  * [Understandable RayTracing](https://github.com/ssloy/tinyraytracer/wiki/Part-1:-understandable-raytracing)
