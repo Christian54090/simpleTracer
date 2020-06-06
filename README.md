@@ -19,7 +19,7 @@ simpleTracer is a Ray Tracer written in C++.
  * [ ] Depth of field
  * [ ] .jpg and .png support
  * [ ] Triangle meshes
- * [ ] Surface materials
+ * [ ] Surface textures
  
 ## Resources
  * [Understandable RayTracing](https://github.com/ssloy/tinyraytracer/wiki/Part-1:-understandable-raytracing)
